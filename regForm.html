@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/home.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="Full Name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="Full Name" required>
+	
+	    <label for="Phone Number"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="Phone Number" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+	
+	<p>
+	<label><b>Birthday Info</b></label>
+	<br>
+	</br>
+	<th><b>month:</b>
+		</th><th>	</th>
+		<th><select>
+  <option value="volvo">JAN</option>
+  <option value="saab">FEB</option>
+  <option value="opel">MAR</option>
+  <option value="audi">APR</option>
+  <option value="audi">MAY</option>
+  <option value="audi">JUN</option>
+  <option value="audi">JUL</option>
+  <option value="audi">AUG</option>
+  <option value="audi">SEP</option>
+  <option value="audi">OCT</option>
+    <option value="audi">NOV</option>
+  <option value="audi">DEC</option>
+</select></th>
+
+
+	<th><b>Day:</b>
+		</th><th>	</th>
+		<th><select>
+  <option value="volvo">1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+  <option value="audi">5</option>
+  <option value="audi">6</option>
+  <option value="audi">8</option>
+  <option value="audi">9</option>
+  <option value="audi">10</option>
+  <option value="audi">11</option>
+    <option value="audi">12</option>
+  <option value="audi">13</option>
+    <option value="volvo">14</option>
+  <option value="saab">15</option>
+  <option value="opel">16</option>
+  <option value="audi">17</option>
+  <option value="audi">18</option>
+  <option value="audi">19</option>
+  <option value="audi">20</option>
+  <option value="audi">21</option>
+  <option value="audi">22</option>
+  <option value="audi">23</option>
+    <option value="audi">24</option>
+  <option value="audi">25</option>
+    <option value="audi">26</option>
+  <option value="audi">27</option>
+  <option value="audi">28</option>
+    <option value="audi">29</option>
+  <option value="audi">30</option>
+   <option value="audi">31</option>
+  
+</select></th>
+	
+		<th> <b>Age Group:</b>
+		</th><th>	</th>
+		<th><select>
+  <option value="volvo">Before 1970s</option>
+  <option value="saab">Between 1970-1980s</option>
+  <option value="opel">After 1990s</option>
+
+</select></th>
+	
+	</p>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+    <p><font color = "blue">Many thanks on behalf of becomming a member to my Blogs!</font></p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
